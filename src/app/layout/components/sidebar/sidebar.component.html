@@ -3,6 +3,12 @@
         <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/dashboard']">
             <mat-icon class="sidenav-icon">dashboard</mat-icon> {{ 'Dashboard' | translate }}
         </a>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/categoria']">
+            <mat-icon class="sidenav-icon">chrome_reader_mode</mat-icon> {{ 'Categories' | translate }}
+        </a>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/categoria']">
+            <mat-icon class="sidenav-icon">build</mat-icon> {{ 'Items' | translate }}
+        </a>
         <!--<a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/charts']">
             <mat-icon class="sidenav-icon">bar_chart</mat-icon> {{ 'Charts' | translate }}
         </a>

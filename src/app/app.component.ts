@@ -8,7 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent implements OnInit, AfterViewInit {
     constructor(private translate: TranslateService, private elementRef: ElementRef) {
-        translate.setDefaultLang('en');
+        translate.setDefaultLang('es');
     }
     ngAfterViewInit() {
         this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#494949';

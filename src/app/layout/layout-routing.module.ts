@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { LayoutComponent } from './layout.component';
+import { CategoriaComponent } from './categoria/categoria.component';
+import { EquipoComponent } from './equipo/equipo.component';
 
 const routes: Routes = [
     {
@@ -17,6 +19,14 @@ const routes: Routes = [
                 loadChildren: './dashboard/dashboard.module#DashboardModule'
             },
             {
+                path: 'categoria',
+                component: CategoriaComponent
+            },
+            {
+                path: 'equipo',
+                component: EquipoComponent
+            }
+            /*{
                 path: 'charts',
                 loadChildren: './charts/charts.module#ChartsModule'
             },
@@ -40,7 +50,7 @@ const routes: Routes = [
             {
                 path: 'blank-page',
                 loadChildren: './blank-page/blank-page.module#BlankPageModule'
-            }
+            }*/
         ]
     }
 ];
