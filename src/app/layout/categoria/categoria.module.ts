@@ -22,6 +22,7 @@ import {
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import { HttpModule } from '@angular/http';
     MatExpansionModule,
     MatSortModule,
     MatSelectModule,
+    TranslateModule,
     FlexLayoutModule.withConfig({addFlexToParent: false})
   ]
 })

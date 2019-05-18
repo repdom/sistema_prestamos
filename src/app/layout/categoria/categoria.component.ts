@@ -14,8 +14,8 @@ export class Categoria {
   styleUrls: ['./categoria.component.scss']
 })
 export class CategoriaComponent implements OnInit {
-  public items: Categoria[] = [];
-  public nuevoItem: Categoria = new Categoria();
+  public categorias: Categoria[] = [];
+  public nuevaCategoria: Categoria = new Categoria();
   dataSource: MatTableDataSource<Categoria>;
   actualizar = false;
   displayedColumns = ['nombre', 'definicion', 'acciones'];
@@ -33,5 +33,12 @@ export class CategoriaComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
   }
-
+  editarItem(categoria: Categoria) {
+    this.actualizar = true;
+    this.nuevaCategoria = categoria;
+  }
+  cancelar() {
+    this.actualizar = false;
+    this.nuevaCategoria = new Categoria();
+  }
 }
